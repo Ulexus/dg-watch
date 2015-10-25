@@ -1,0 +1,9 @@
+[Unit]
+Description=Dansguardian whitelist configuration watcher
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+ExecStart=/srv/dg-watch
+
