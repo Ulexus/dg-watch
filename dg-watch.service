@@ -5,5 +5,6 @@ Description=Dansguardian whitelist configuration watcher
 WantedBy=multi-user.target
 
 [Service]
+Environment=MONGO_URL=localhost
 ExecStart=/srv/dg-watch
 
