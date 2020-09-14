@@ -103,6 +103,10 @@ func main() {
 		},
 	})
 
+	// Always load when we first start
+	Reload()
+
+	// Wait for changes
 	for {
 		select {
 		case err = <-errs:
